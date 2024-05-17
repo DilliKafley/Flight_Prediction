@@ -274,7 +274,7 @@ st.set_page_config(
 	layout="wide"
 )
 
-st.title("Flights Prices Prediction - AWS SageMaker")
+st.title("Flights Prices Prediction - modeled using AWS Sagemaker")
 
 # user inputs
 airline = st.selectbox(
@@ -339,4 +339,3 @@ if st.button("Predict"):
 	pred = model.predict(x_new_xgb)[0]
 
 	st.info(f"The predicted price is {pred:,.0f} INR")
-
